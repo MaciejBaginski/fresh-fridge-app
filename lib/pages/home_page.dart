@@ -13,6 +13,53 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
+
+      body: Column(
+        children: [
+          Expanded(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 2, 8, 4),
+                    child: Card(
+                      child: InkWell(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical:20),
+                          child: Center(child: Text('Text Field')),
+                        ),
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 2, 8, 4),
+                    child: Card(
+                      child: InkWell(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical:20),
+                          child: Center(child: Text('Text Field')),
+                        ),
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
